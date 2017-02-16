@@ -3,11 +3,17 @@
  */
 public class Instructor extends Person {
     String title;
+    Course favCourse;
 
     public Instructor(String name, String emailAddress, String title){
         super(name,emailAddress);
         this.title=title;
     }
+
+    public void addCourse(Course c){
+
+    }
+
 
     public String toString(){
         return String.format("Name: %s\nTitle: %s\nEmail: %s", this.name, this.title, this.emailAddress);
